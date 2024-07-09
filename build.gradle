@@ -1,9 +1,9 @@
 buildscript {
     repositories {
-
+        mavenCentral()
     }
     dependencies {
-
+        classpath 'com.google.code.gson:gson:2.11.0'
     }
 }
 
@@ -23,31 +23,38 @@ dependencies {
 
 }
 
-println Download.name
-
-def downloadHMCL = tasks.register("downloadHMCL", Download) {
-
-    src("https://github.com/HMCL-dev/HMCL/releases/download/v3.5.8.249/HMCL-3.5.8.249.jar")
-    dest file("HMCL.jar")
-
+def downloadMCL = tasks.register("downloadMCL", Download) {
+    src([
+            "https://github.com/HMCL-dev/HMCL/releases/download/v3.5.8.249/HMCL-3.5.8.249.jar",
+            "https://github.com/MrShieh-X/console-minecraft-launcher/releases/download/2.2.1/cmcl.jar"
+    ])
+    dest file("./")
+    overwrite(true)
 }
 
-def downloadFabricLoaderInstall = tasks.register("dowloadFabricLoaderInstall", Download) {
-    src("https://maven.fabricmc.net/net/fabricmc/fabric-installer/1.0.1/fabric-installer-1.0.1.jar")
-    dest file("fabric-installer.jar")
-}
-
-def installFabric = tasks.register("installFabric", Exec) {
+def setCMCLConfig = tasks.register("setCMCLCnfig", Exec) {
+    dependsOn(downloadMCL)
     workingDir(file("./"))
     if (System.getProperty("os.name").toLowerCase(Locale.ROOT).contains("windows")) {
         commandLine System.getProperty("os.name").toLowerCase(Locale.ROOT).contains("windows") ? "cmd" : "sh",
-                '/c', 'java', '-jar', 'fabric-installer.jar', 'client', '-dir', ".minecraft", '-mcversion', "1.20.1"
+                '/c', 'java', '-jar', 'cmcl.jar', 'config',
+                "downloadSource", 0
+    }
+}
+
+def installFabric = tasks.register("installFabric", Exec) {
+    dependsOn(setCMCLCnfig)
+    workingDir(file("./"))
+    if (System.getProperty("os.name").toLowerCase(Locale.ROOT).contains("windows")) {
+        commandLine System.getProperty("os.name").toLowerCase(Locale.ROOT).contains("windows") ? "cmd" : "sh",
+                '/c', 'java', '-jar', 'cmcl.jar', 'install',
+                "$mc_version" , "-n", "$archive_base_name", "-s",
+                "--fabric=$fabric_loader_version", "--api=$fabric_api_version-$mc_version"
     }
 }
 
 tasks.build.configure {
-    dependsOn(downloadHMCL)
-    dependsOn(downloadFabricLoaderInstall)
+    dependsOn(installFabric)
 }
 
 // https://maven.fabricmc.net/net/fabricmc/fabric-installer/1.0.1/fabric-installer-1.0.1.jar

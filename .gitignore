@@ -1,8 +1,11 @@
 .gradle
+.idea/
 **/build/
 !src/**/build/
 .minecraft/
-
+.cmcl/
+cmcl.json
+hmcl.json
 *.jar
 
 # Ignore Gradle GUI config

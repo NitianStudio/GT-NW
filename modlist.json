@@ -1,0 +1,36 @@
+{
+  "list": [
+    {
+      "id": "635042",
+      "name": "Ad Astra",
+      "desc": "星系 开发环境可能会搭建失败",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf"
+    },
+    {
+      "id": "704366",
+      "name": "Adaptive Tooltips",
+      "desc": "提示狂优化",
+      "needClient": true,
+      "needServer": false,
+      "source": "cf"
+    },
+    {
+      "id": "962731",
+      "name": "AdvancementJS",
+      "desc": "进度kubejs魔改",
+      "needClient": false,
+      "needServer": true,
+      "source": "cf"
+    },
+    {
+      "id": "639888",
+      "name": "Amethyst Core",
+      "desc": "紫晶魔艺前置",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf"
+    }
+  ]
+}
