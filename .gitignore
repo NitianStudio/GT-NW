@@ -1,6 +1,9 @@
 .gradle
 **/build/
 !src/**/build/
+.minecraft/
+
+*.jar
 
 # Ignore Gradle GUI config
 gradle-app.setting
