@@ -6,9 +6,14 @@ import java.util.*
 buildscript {
     repositories {
         mavenCentral()
+        maven {
+            url = uri("https://jitpack.io")
+            name = "Github Repository"
+        }
     }
     dependencies {
         classpath("com.google.code.gson:gson:2.11.0")
+
     }
 }
 plugins {
@@ -20,6 +25,8 @@ val mcVersion:String by rootProject
 val archiveBaseName: String by rootProject
 val fabricLoaderVersion: String by rootProject
 val fabricApiVersion: String by rootProject
+
+
 
 enum class Resources {
     cf,mr,curseforge,modrinth;
@@ -47,6 +54,10 @@ data class ModList(
 )
 val gson = GsonBuilder().setPrettyPrinting().create()
 var list = gson.fromJson(file("modlist.json").bufferedReader(Charsets.UTF_8), ModList::class.java)
+println("modlist:")
+list.list.forEach {
+    println("\t${it.name}")
+}
 
 tasks {
     val downloadMCL = register<Download>("downloadMCL") {
@@ -76,30 +87,20 @@ tasks {
         workingDir(file("./"))
     }
 
-    var listTasks = ArrayList<TaskProvider<Exec>>()
+    val listTasks = ArrayList<TaskProvider<Exec>>()
     for (value in list.list) {
-        val provider = register<Exec>("downloadClintMod${value.name.replace(" ", "")}") {
+        val provider = register<Exec>("downloadClientMod${value.name.replace(" ", "")}") {
             setGroup("downloadMods")
             workingDir(file("./"))
-            if (value.needClient) {
-                val id = value.id
-                val resource = value.resource.name
-                val modVerein = value.modVerein
-                commandLine(
-                    if (System.getProperty("os.name").lowercase(Locale.ROOT).contains("windows")) "cmd" else "sh",
-                    "/c", "java", "-Dfile.encoding=UTF-8", "-jar", "cmcl.jar", "mod", "--install",
-                    "--source=$resource", "--id=$id", "--game-version=$mcVersion", "--version=$modVerein"
-                )
+            val id = value.id
+            val resource = value.resource.name
+            val modVerein = value.modVerein
+            commandLine(
+                if (System.getProperty("os.name").lowercase(Locale.ROOT).contains("windows")) "cmd" else "sh",
+                "/c", "java", "-Dfile.encoding=UTF-8", "-jar", "cmcl.jar", "mod", "--install",
+                "--source=$resource", "--id=$id", "--game-version=$mcVersion", "--version=$modVerein"
+            )
 
-            } else {
-                commandLine(
-
-                    if (System.getProperty("os.name").lowercase(Locale.ROOT).contains("windows")) "cmd" else "sh",
-
-                                        "/c", "echo", "is server mod"
-
-                )
-            }
         }
         listTasks.add(provider)
     }

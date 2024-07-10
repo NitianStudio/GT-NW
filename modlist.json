@@ -1,6 +1,519 @@
 {
   "list": [
     {
+      "id": "306612",
+      "name": "Fabric Api",
+      "desc": "Fabric万用库",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "0.92.2+1.20.1"
+    },
+    {
+      "id": "854949",
+      "name": "Fusion Connected Textures",
+      "desc": "连接纹理",
+      "needClient": true,
+      "needServer": false,
+      "source": "cf",
+      "modVersion": "1.1.1-fabric-mc1.20.1"
+    },
+    {
+      "id": "419699",
+      "name": "Architectury api",
+      "desc": "多加载器兼容库",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "9.2.14-fabric"
+    },
+    {
+      "id": "1005914",
+      "name": "Fzzy Config",
+      "desc": "配置库",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "0.3.5+1.20.1"
+    },
+    {
+      "id": "821445",
+      "name": "Fzzy Core",
+      "desc": "Fzzy核心库",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "0.5.1+1.20.1"
+    },
+    {
+      "id": "388172",
+      "name": "Geckolib",
+      "desc": "模型库",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "fabric-1.20.1-4.4.7"
+    },
+    {
+      "id": "682213",
+      "name": "MCPitanLib",
+      "desc": "MCPitan库",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "2.3.2-fix.1-1.20.1-fabric"
+    },
+    {
+      "id": "938643",
+      "name": "Melody",
+      "desc": "音乐库",
+      "needClient": true,
+      "needServer": false,
+      "source": "cf",
+      "modVersion": "1.0.4_MC_1.20.1-1.20.4"
+    },
+    {
+      "id": "499980",
+      "name": "Moon Light",
+      "desc": "月光库",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20-2.12.6-fabric"
+    },
+    {
+      "id": "890405",
+      "name": "GregTech CEu Modern",
+      "desc": "格雷科技现代版",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "fabric-1.20.1-1.0.20.b"
+    },
+    {
+      "id": "666014",
+      "name": "Immersive Aircraft",
+      "desc": "沉浸式飞行",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.0.1+1.20.1-fabric"
+    },
+    {
+      "id": "571035",
+      "name": "Immersive Weathering Fabric",
+      "desc": "沉浸式腐蚀",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20.1-2.0.1-fabric"
+    },
+    {
+      "id": "391708",
+      "name": "Industrial Revolution",
+      "desc": "工业革命",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.16.7-BETA"
+    },
+    {
+      "id": "888029",
+      "name": "More Structures",
+      "desc": "修改结构",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "morestructuresmod-1.20.1-1.3.0"
+    },
+    {
+      "id": "ocsFpJuX",
+      "name": "Mufog",
+      "desc": "锻造",
+      "needClient": true,
+      "needServer": true,
+      "source": "mr",
+      "modVersion": "2.0.0-Fabric"
+    },
+    {
+      "id": "Yi2fIEtc",
+      "name": "Inventory Binds",
+      "desc": "物品栏按键绑定",
+      "needClient": true,
+      "needServer": false,
+      "source": "mr",
+      "modVersion": "1.1-1.20.1"
+    },
+    {
+      "id": "697926",
+      "name": "Item Alchemy Fabric",
+      "desc": "等价交换",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "0.9.0"
+    },
+    {
+      "id": "696251",
+      "name": "Porting Lib",
+      "desc": "Porting库",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "2.3.4+1.20.1"
+    },
+    {
+      "id": "237903",
+      "name": "Reborn Core",
+      "desc": "Reborn核心库",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "5.8.7"
+    },
+    {
+      "id": "714059",
+      "name": "Resourceful Config Fabric",
+      "desc": "带web配置的配置库",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "fabric-1.20.1-2.1.2"
+    },
+    {
+      "id": "570073",
+      "name": "Resourceful Lib Fabric",
+      "desc": "Resourcefunl 库",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "fabric-1.20.1-2.1.25"
+    },
+    {
+      "id": "656526",
+      "name": "Revelationary",
+      "desc": "数据驱动库",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.3.8+1.20.1"
+    },
+    {
+      "id": "416294",
+      "name": "Rhino",
+      "desc": "犀牛库(KubeJS)",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "fabric-2001.2.2-build.18"
+    },
+    {
+      "id": "775518",
+      "name": "Runes",
+      "desc": "符文",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "0.9.13+1.20.1"
+    },
+    {
+      "id": "416797",
+      "name": "Konkrete Fabric",
+      "desc": "混凝土库",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "fabric_1.8.1_MC_1.20.1"
+    },
+    {
+      "id": "618511",
+      "name": "KubeJS Botania",
+      "desc": "Botania的KubeJS支持",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.4.0-fabric"
+    },
+    {
+      "id": "238086",
+      "name": "KubeJS Fabric",
+      "desc": "KubeJS Fabric",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "fabric-2001.6.5-build.14"
+    },
+    {
+      "id": "D5h9NKNI",
+      "name": "Lavender",
+      "desc": "♂♀指南",
+      "needClient": true,
+      "needServer": true,
+      "source": "mr",
+      "modVersion": "0.1.9+1.20"
+    },
+    {
+      "id": "616457",
+      "name": "Lodestone",
+      "desc": "磁石",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20.1-1.6.1.2h-fabric"
+    },
+    {
+      "id": "484064",
+      "name": "Malum",
+      "desc": "巴啦啦能量-黑魔法[灵灾]",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20.1-1.6.2.0c-fabric"
+    },
+    {
+      "id": "580681",
+      "name": "Immersive Armor",
+      "desc": "沉浸式盔甲",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.6.1+1.20.1-fabric"
+    },
+    {
+      "id": "912767",
+      "name": "AzureLib Armor",
+      "desc": "简单化的Geckolib分支",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "fabric-1.20.1-2.0.6"
+    },
+    {
+      "id": "348521",
+      "name": "Cloth Config API",
+      "desc": "可视化配置gui库",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "11.1.118-fabric"
+    },
+    {
+      "id": "422310",
+      "name": "conjuring",
+      "desc": "灵魂魔术师",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.0.29+1.20"
+    },
+    {
+      "id": "398614",
+      "name": "Deep Mob Learning Refabricated",
+      "desc": "战斗吧，深度怪物学习",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "0.6.1-BETA+1.20.1"
+    },
+    {
+      "id": "704113",
+      "name": "Botarium",
+      "desc": "星际前置库",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "fabric-1.20.1-2.3.4"
+    },
+    {
+      "id": "247357",
+      "name": "Extra Alchemy",
+      "desc":"炼药拓展",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "fabric-1.20.1-1.10.0"
+    },
+    {
+      "id": "627986",
+      "name": "Naturalist",
+      "desc": "自然学家",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "fabric-4.0.3-1.20.1"
+    },
+    {
+      "id": "570354",
+      "name": "Null-scape",
+      "desc": "空无之景",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20.x_v1.2.7"
+    },
+    {
+      "id": "532610",
+      "name": "owo lib",
+      "desc": "owo库",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "0.11.2+1.20"
+    },
+    {
+      "id": "318449",
+      "name": "Cardinal Components API",
+      "desc": "组件库",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "5.2.2"
+    },
+    {
+      "id": "421649",
+      "name": "YUNGs API",
+      "desc": "YUNGs的库",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20-Fabric-4.0.5"
+    },
+    {
+      "id": "631020",
+      "name": "YUNGs Better Desert Temples",
+      "desc": "YUNGs的沙漠神殿优化",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20-Fabric-3.0.3"
+    },
+    {
+      "id": "525586",
+      "name": "YUNGs Better Dungeons",
+      "desc": "YUNGs的地牢优化",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20-Fabric-4.0.4"
+    },
+    {
+      "id": "901350",
+      "name": "YUNGs Better End Island",
+      "desc": "YUNGs的末地岛屿优化",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20-Fabric-2.0.6"
+    },
+    {
+      "id": "897678",
+      "name": "YUNGs Better Jungle Temples",
+      "desc": "YUNGs的丛林神庙优化",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20-Fabric-2.0.5"
+    },
+    {
+      "id": "373591",
+      "name": "YUNGs Better Mine-shafts",
+      "desc": "YUNGs的矿井优化",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20-Fabric-4.0.4"
+    },
+    {
+      "id": "689252",
+      "name": "YUNGs Better Ocean Monuments",
+      "desc": "YUNGs的海底神殿优化",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20-Fabric-3.0.4"
+    },
+    {
+      "id": "480684",
+      "name": "YUNGs Better Strongholds",
+      "desc": "YUNGs的要塞优化",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20-Fabric-4.0.3"
+    },
+    {
+      "id": "631403",
+      "name": "YUNGs Better WitchHuts",
+      "desc": "YUNGs的沼泽小屋优化",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20-Fabric-3.0.3"
+    },
+    {
+      "id": "590988",
+      "name": "YUNGs Bridges",
+      "desc": "YUNGs的桥",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20-Fabric-4.0.3"
+    },
+    {
+      "id": "590993",
+      "name": "YUNGs Extras",
+      "desc": "YUNGs的拓展",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20-Fabric-4.0.3"
+    },
+    {
+      "id": "308702",
+      "name": "Mod Menu",
+      "desc": "模组菜单",
+      "needClient": true,
+      "needServer": false,
+      "source": "cf",
+      "modVersion": "7.2.2"
+    },
+    {
+      "id": "393236",
+      "name": "Patchouli Fabric",
+      "desc": "帕秋莉手册",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20.1-84-FABRIC"
+    },
+    {
+      "id": "658587",
+      "name": "Player Animator",
+      "desc": "玩家动画库",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "fabric-1.0.2-rc1+1.20"
+    },
+    {
+      "id": "929601",
+      "name": "Equipment Standard",
+      "desc": "定义装备属性库",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.4.2+mc1.20-fabric"
+    },
+    {
+      "id": "511812",
+      "name": "When Dungeons Arise - Fabric!",
+      "desc": "地牢浮现之时",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20.x-2.1.58-fabric-release"
+    },
+    {
       "id": "635042",
       "name": "Ad Astra",
       "desc": "星系 开发环境可能会搭建失败",
@@ -12,7 +525,7 @@
     {
       "id": "704346",
       "name": "Adaptive Tooltips",
-      "desc": "提示狂优化",
+      "desc": "提示框优化",
       "needClient": true,
       "needServer": false,
       "source": "cf",
@@ -22,7 +535,7 @@
       "id": "962731",
       "name": "Advancement JS",
       "desc": "进度kubejs魔改",
-      "needClient": false,
+      "needClient": true,
       "needServer": true,
       "source": "cf",
       "modVersion": "fabric-2.9.4"
@@ -35,6 +548,177 @@
       "needServer": true,
       "source": "cf",
       "modVersion": "1.5.0+1.20.1"
+    },
+    {
+      "id": "608261",
+      "name": "Amethyst Imbuement",
+      "desc": "紫晶魔艺",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20.1-19.5"
+    },
+    {
+      "id": "421839",
+      "name": "Botania Fabric",
+      "desc": "植物魔法",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20.1-445-FABRIC"
+    },
+    {
+      "id": "941480",
+      "name": "Extra RPG Attributes Formerly Reabsorption",
+      "desc": "额外RPG属性",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.2.8"
+    },
+    {
+      "id": "308769",
+      "name": "Fabric Language Kotlin",
+      "desc": "Fabric语言支持kotlin",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.11.0+kotlin.2.0.0"
+    },
+    {
+      "id": "367706",
+      "name": "FancyMenu",
+      "desc": "菜单美化",
+      "needClient": true,
+      "needServer": false,
+      "source": "cf",
+      "modVersion": "fabric_3.2.3_MC_1.20.1"
+    },
+    {
+      "id": "482834",
+      "name": "Farmers Delight Fabric",
+      "desc": "农夫乐事",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "fabric-1.4.3"
+    },
+    {
+      "id": "547434",
+      "name": "Forge Config Api Port",
+      "desc": "Forge配置API",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "v8.0.0-1.20.1-Fabric"
+    },
+    {
+      "id": "552176",
+      "name": "Amplified Nether",
+      "desc": "放大化下界",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20.x_v1.2.5"
+    },
+    {
+      "id": "556967",
+      "name": "Spectrum",
+      "desc": "光谱世界",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.7.14"
+    },
+    {
+      "id": "807653",
+      "name": "Spell Engine",
+      "desc": "法术引擎",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "0.15.7+1.20.1"
+    },
+    {
+      "id": "771265",
+      "name": "Spell Power Attributes",
+      "desc": "法术强度属性",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "0.11.0+1.20.1"
+    },
+    {
+      "id": "873906",
+      "name": "Tech-enhanced",
+      "desc": "科技增强",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.0.3"
+    },
+    {
+      "id": "233564",
+      "name": "Tech Reborn",
+      "desc": "科技重生",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "5.8.7"
+    },
+    {
+      "id": "513688",
+      "name": "Terralith",
+      "desc": "世界大改",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.20.x_v2.5.4"
+    },
+    {
+      "id": "341284",
+      "name": "Trinkets Fabric",
+      "desc": "饰品栏",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "3.7.2"
+    },
+    {
+      "id": "639871",
+      "name": "Wired Restone",
+      "desc": "红石计划",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "0.7.8+1.20.1"
+    },
+    {
+      "id": "734325",
+      "name": "Wizards",
+      "desc": "魔法师",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "1.2.2+1.20.1"
+    },
+    {
+      "id": "667299",
+      "name": "YetAnotherConfigLib",
+      "desc": "YetAnotherConfigLib",
+      "needClient": true,
+      "needServer": false,
+      "source": "cf",
+      "modVersion": "3.5.0+1.20.1-fabric"
+    },
+    {
+      "id": "223794",
+      "name": "Applied Energistics 2",
+      "desc": "应用能源2",
+      "needClient": true,
+      "needServer": true,
+      "source": "cf",
+      "modVersion": "fabric-15.2.8"
     }
   ]
 }
