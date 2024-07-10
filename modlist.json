@@ -469,6 +469,15 @@
       "modVersion": "1.20-Fabric-4.0.3"
     },
     {
+      "id": "585406",
+      "name": "ProbeJS",
+      "desc": "探针",
+      "needClient": true,
+      "needServer": false,
+      "source": "cf",
+      "modVersion": "6.0.1-fabric"
+    },
+    {
       "id": "308702",
       "name": "Mod Menu",
       "desc": "模组菜单",
