@@ -36,8 +36,10 @@ data class Value(
     var needClient: Boolean,
     @SerializedName("needServer")
     var needServer: Boolean,
-    @SerializedName("resource")
-    var resource: Resources
+    @SerializedName("source")
+    var resource: Resources,
+    @SerializedName("modVersion")
+    var modVerein: String
 )
 data class ModList(
     @SerializedName("list")
@@ -70,19 +72,41 @@ tasks {
             "-n", archiveBaseName , "-s", "--fabric=$fabricLoaderVersion", "--api=$fabricApiVersion")
     }
 
+    val downloadLast = register<Exec>("downloadLast") {
+        workingDir(file("./"))
+    }
+
+    var listTasks = ArrayList<TaskProvider<Exec>>()
+    for (value in list.list) {
+        val provider = register<Exec>("downloadClintMod${value.name.replace(" ", "")}") {
+            setGroup("downloadMods")
+            workingDir(file("./"))
+            if (value.needClient) {
+                val id = value.id
+                val resource = value.resource.name
+                val modVerein = value.modVerein
+                commandLine(
+                    if (System.getProperty("os.name").lowercase(Locale.ROOT).contains("windows")) "cmd" else "sh",
+                    "/c", "java", "-Dfile.encoding=UTF-8", "-jar", "cmcl.jar", "mod", "--install",
+                    "--source=$resource", "--id=$id", "--game-version=$mcVersion", "--version=$modVerein"
+                )
+
+            } else {
+                commandLine(
+
+                    if (System.getProperty("os.name").lowercase(Locale.ROOT).contains("windows")) "cmd" else "sh",
+
+                                        "/c", "echo", "is server mod"
+
+                )
+            }
+        }
+        listTasks.add(provider)
+    }
+
+
     build.configure {
         dependsOn(installFabricClient)
+        dependsOn(listTasks)
     }
 }
-
-
-//class ModList {
-//    public a<Value> list;
-//    static class Value {
-//
-//    }
-//}
-//
-//def downloadMods = tasks.register("downloadMods", Exec) {
-//
-//}

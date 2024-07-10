@@ -6,23 +6,26 @@
       "desc": "星系 开发环境可能会搭建失败",
       "needClient": true,
       "needServer": true,
-      "source": "cf"
+      "source": "cf",
+      "modVersion": "fabric-1.20.1-1.15.18"
     },
     {
-      "id": "704366",
+      "id": "704346",
       "name": "Adaptive Tooltips",
       "desc": "提示狂优化",
       "needClient": true,
       "needServer": false,
-      "source": "cf"
+      "source": "cf",
+      "modVersion": "1.3.0-fabric-1.20.2"
     },
     {
       "id": "962731",
-      "name": "AdvancementJS",
+      "name": "Advancement JS",
       "desc": "进度kubejs魔改",
       "needClient": false,
       "needServer": true,
-      "source": "cf"
+      "source": "cf",
+      "modVersion": "fabric-2.9.4"
     },
     {
       "id": "639888",
@@ -30,7 +33,8 @@
       "desc": "紫晶魔艺前置",
       "needClient": true,
       "needServer": true,
-      "source": "cf"
+      "source": "cf",
+      "modVersion": "1.5.0+1.20.1"
     }
   ]
 }
